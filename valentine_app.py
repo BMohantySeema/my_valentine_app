@@ -58,7 +58,7 @@ st.markdown("""
 # Pages
 def start_page():
     st.markdown('<div class="val-card">', unsafe_allow_html=True)
-    st.markdown('<div class="val-title">Hey you… 💌</div>', unsafe_allow_html=True)
+    st.markdown('<div class="val-title">Hey my cutie pie 💌</div>', unsafe_allow_html=True)
     st.markdown('<p class="val-text">I have a very cute Valentine question for you…</p>',
                 unsafe_allow_html=True)
     if st.button("Start ❤️"):
@@ -82,7 +82,7 @@ def page1():
 
 def page2():
     st.markdown('<div class="val-card">', unsafe_allow_html=True)
-    st.markdown('<div class="val-title">🎶 Page 2 🎶</div>', unsafe_allow_html=True)
+    st.markdown('<div class="val-title"> Page 2 </div>', unsafe_allow_html=True)
     st.markdown('<p class="val-text">Are you prepared for the cutest question of 2026?</p>',
                 unsafe_allow_html=True)
     if st.button("Continue"):
