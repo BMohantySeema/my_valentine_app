@@ -106,16 +106,21 @@ def big_question():
 
 
 def yes_page():
-    st.markdown('<div class="val-card">', unsafe_allow_html=True)
-    st.markdown('<div class="val-title">Yayyy! ❤️</div>', unsafe_allow_html=True)
     st.markdown("""
-    <p class="val-text">
-    Awwww, you said YES 🥺💘  
-    Now you're officially my Forever Valentine.  
-    No refunds. No returns. You're stuck with me 😌🌹  
-    </p>
-    """)
+        <div style="text-align:center;">
+            <h1 style="color:#c2185b; font-size:2.5rem;">Yayyy! ❤️</h1>
+        </div>
+    """, unsafe_allow_html=True)
 
+    st.markdown("""
+        <p class="val-text" style="font-size:1.2rem; color:#6d214f; line-height:1.6;">
+            Awwww, you said <b>YES</b> 🥺💘 <br><br>
+            Now you're officially my <b>Forever Valentine</b>. <br>
+            No refunds. No returns. You're stuck with me 😌🌹  
+        </p>
+    """, unsafe_allow_html=True)
+
+    # SHOW PHOTO
     if PHOTO_PATH.exists():
         st.image(str(PHOTO_PATH), caption="Us 💕", use_container_width=True)
     else:
@@ -123,8 +128,6 @@ def yes_page():
 
     if st.button("Replay 🔁"):
         go("start")
-
-    st.markdown('</div>', unsafe_allow_html=True)
 
 
 def no_page():
