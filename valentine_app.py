@@ -119,6 +119,11 @@ def yes_page():
             No refunds. No returns. You're stuck with me 😌🌹  
         </p>
     """, unsafe_allow_html=True)
+    st.markdown(
+        '<a href="sms:+14698448748&body=Yes%20baby%20I%20said%20YES%20❤️" '
+        'style="text-decoration:none;"><button>Text Seema I Said YES ❤️</button></a>',
+        unsafe_allow_html=True
+    )
 
     # SHOW PHOTO
     if PHOTO_PATH.exists():
