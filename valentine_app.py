@@ -16,7 +16,6 @@ if "page" not in st.session_state:
 def go(page):
     st.session_state.page = page
 
-# Cute pink theme
 st.markdown("""
 <style>
 .stApp {
@@ -55,7 +54,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# Pages
 def start_page():
     st.markdown('<div class="val-card">', unsafe_allow_html=True)
     st.markdown('<div class="val-title">Hey my cutie pie 💌</div>', unsafe_allow_html=True)
